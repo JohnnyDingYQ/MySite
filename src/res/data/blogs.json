@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Hello World",
+    "desc": "Introduction to this site",
+    "tags": ["Thoughts"],
+    "path": "/blog/hello_world"
+  },
+  {
+    "title": "Mobile Slider Implementation",
+    "desc": "My unique mobile slider",
+    "tags": ["Tech"],
+    "path": "/blog/mobile_slider_implementation"
+  },
+  {
+    "title": "Technology of This Site",
+    "desc": "Introduction and Explanations",
+    "tags": ["Tech"],
+    "path": "/blog/technology_of_this_site"
+  }
+]

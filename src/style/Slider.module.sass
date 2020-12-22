@@ -1,0 +1,37 @@
+@use "base"
+  
+.container
+  background-image: linear-gradient(140deg, #df5634 0%, #e05b26 50%, #e08e5e 75%)
+  min-height: 10rem
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  position: relative
+
+  p
+    align-self: center
+    font-size: 2rem
+    width: 100%
+    text-align: center
+    +base.transition(0.5s)
+  
+  .nav_dots
+    position: absolute
+    margin: auto
+    bottom: 1rem
+    display: flex
+    list-style-type: none
+    margin: 0
+    padding: 0
+    
+    li
+      width: 0.5rem
+      height: 0.5rem
+      background-color: #e5e5e5
+      margin: 0 0.3rem
+      border-radius: 50%
+    
+    .nav_dots_selected
+      background-color: #777
+      

@@ -1,14 +1,25 @@
 module.exports = {
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-mdx",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `./src/favicon.png`,
       },
-      __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/res/md`,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
   ],
 };

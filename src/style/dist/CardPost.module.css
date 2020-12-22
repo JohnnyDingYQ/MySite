@@ -1,0 +1,36 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 25rem;
+  height: 13rem;
+  background-color: #5998C5;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.container .blog_title {
+  font-size: 1.7rem;
+  color: #343633;
+  margin-bottom: 0.3rem;
+}
+.container .blog_desc {
+  font-size: 1rem;
+  color: #E2E2E2;
+  padding-left: 0.3rem;
+}
+.container .tags {
+  margin-top: auto;
+}

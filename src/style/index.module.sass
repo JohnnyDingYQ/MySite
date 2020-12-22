@@ -1,0 +1,129 @@
+@use "base"
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+  +base.respond-to($min-width: small)
+    flex-direction: row
+    flex-wrap: wrap
+  
+  +base.respond-to($min-width: large)
+    padding: 3.5rem 5.5rem
+
+  header
+    +base.respond-to($min-width: small)
+      display: flex
+      width: 100%
+  
+  .site_logo
+    display: none
+
+    +base.respond-to($min-width: small)
+      display: block
+      width: 32%
+      height: auto
+      margin-top: 2rem
+      margin-left: auto
+
+  .site_logo_mobile
+    width: 60%
+    height: auto
+    +base.respond-to($min-width: small)
+      display: none
+  
+  .header_text
+    +base.respond-to($min-width: small)
+      flex-basis: 55%
+      padding: 0 1rem
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+  h1
+    color: base.$chocolate-web
+    margin: 1rem 0
+    font-size: 3rem
+    font-weight: bold
+
+    +base.respond-to($min-width: small)
+      align-self: flex-end
+      text-align: start
+      font-size: 2.7rem
+      margin: 0 0
+      width: 100%
+
+    +base.respond-to($min-width: large)
+      font-size: 4.5rem
+
+  h2
+    margin-bottom: 0.5rem
+    font-weight: normal
+
+    +base.respond-to($min-width: small)
+      font-size: 1.5rem
+      text-align: start
+      width: 100%
+      letter-spacing: 0.1rem
+      margin-left: 0.4rem
+    
+    +base.respond-to($min-width: large)
+      font-size: 2rem
+      margin-left: 1rem
+
+    &:nth-of-type(1)
+      color: base.$platinum
+
+    &:nth-of-type(2)
+      color: base.$cerulean-blue
+
+  %card
+    width: 100%
+    min-height: 15rem
+    margin: 0.7rem 0
+    color: base.$platinum
+    padding: 0.5rem
+    font-size: 1.5rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-weight: bold
+
+    img
+      margin: 0rem 0
+
+    p
+      +base.respond-to($min-width: small)
+        font-size: 2.2rem
+      +base.respond-to($min-width: large)
+        font-size: 3.5rem
+
+  .blog_card
+    @extend %card
+    background-color: base.$cerulean-blue
+
+    +base.respond-to($min-width: small)
+      height: 45vw
+      width: 65%
+
+    img
+      width: 95%
+      +base.respond-to($min-width: small)
+        height: 75%
+
+  .bio_card
+    @extend %card
+    background-color: base.$chocolate-web
+
+    +base.respond-to($min-width: small)
+      height: 45vw
+      width: 32%
+      margin-left: auto
+
+    img
+      width: 70%
+      +base.respond-to($min-width: small)
+        height: 75%
+        width: auto

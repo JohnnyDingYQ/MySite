@@ -1,0 +1,31 @@
+$black-olive: #343633
+$cerulean-blue: #5998C5
+$chocolate-web: #DA7422
+$platinum: #E2E2E2
+$gray: #565B52
+
+$breakpoints: ('small': 658px, 'medium': 768px, 'large': 1200px)
+
+// Credit: https://www.sitepoint.com/managing-responsive-breakpoints-sass/
+=respond-to($min-width)
+  $value: map-get($breakpoints, $min-width)
+  @if $value != null
+    @media (min-width: $value)
+      @content
+  @else
+    @warn "Unfortunately, no value could be retrieved from `#{$min-width}`. " + "Please make sure it is defined in `$breakpoints` map."
+
+@mixin transition($transition)
+    -moz-transition: $transition
+    -o-transition: $transition
+    -webkit-transition: $transition
+    transition: $transition
+
+html
+  font-size: 100%
+
+body
+  background-color: $black-olive
+
+a:hover
+  text-decoration: none

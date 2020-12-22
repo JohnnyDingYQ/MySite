@@ -1,0 +1,32 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.container h1 {
+  color: #DA7422;
+}
+.container h2 {
+  color: #889699;
+  font-weight: normal;
+}
+.container .blog_content {
+  display: block;
+  color: #E2E2E2;
+  text-align: start;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.container .blog_content h2 {
+  color: #5998C5;
+}

@@ -1,0 +1,21 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 1.5rem;
+}
+@media (min-width: 658px) {
+  .container {
+    padding: 2.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  display: inline-block;
+  padding: 0px 2rem;
+  background-color: #E2E2E2;
+  color: #343633;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  border-radius: 0.9rem;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}

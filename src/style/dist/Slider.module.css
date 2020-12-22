@@ -1,0 +1,50 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  background-image: linear-gradient(140deg, #df5634 0%, #e05b26 50%, #e08e5e 75%);
+  min-height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container p {
+  align-self: center;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .nav_dots {
+  position: absolute;
+  margin: auto;
+  bottom: 1rem;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container .nav_dots li {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e5e5e5;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+}
+.container .nav_dots .nav_dots_selected {
+  background-color: #777;
+}
