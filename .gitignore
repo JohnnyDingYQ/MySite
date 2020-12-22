@@ -68,3 +68,9 @@ yarn-error.log
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Ignore Prettier Ignore File
+.prettierignore
+
+# Vscode config
+.vscode
