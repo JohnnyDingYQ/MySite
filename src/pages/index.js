@@ -7,7 +7,7 @@ import s from "../style/dist/index.module.css";
 import Container from "../components/Container";
 import NavBar from "../components/NavBar";
 
-import site_logo from "../res/img/site_icon.svg";
+import site_logo from "../res/img/site_icon.png";
 import blog_art from "../res/img/blog_art.svg";
 import bio_art from "../res/img/bio_art.svg";
 
@@ -42,14 +42,16 @@ export default function Index() {
             </h2>
           </div>
         </header>
-        <Link className={s.blog_card} to="/blog">
-          <p>Blog</p>
-          <img src={blog_art} alt="blog_art"></img>
-        </Link>
-        <Link className={s.bio_card} d to="/bio">
-          <p>Bio</p>
-          <img src={bio_art} alt="bio_art"></img>
-        </Link>
+        <div className={s.card_row_one}>
+          <Link className={s.blog_card} to="/blog">
+            <p>Blog</p>
+            <img src={blog_art} alt="blog_art"></img>
+          </Link>
+          <Link className={s.bio_card} d to="/bio">
+            <p>Bio</p>
+            <img src={bio_art} alt="bio_art"></img>
+          </Link>
+        </div>
       </Container>
     </div>
   );

@@ -36,11 +36,14 @@
   
   .header_text
     +base.respond-to($min-width: small)
-      flex-basis: 55%
+      flex-basis: 53%
       padding: 0 1rem
       display: flex
       flex-direction: column
       justify-content: center
+    
+    +base.respond-to($min-width: large)
+      flex-basis: 50%
 
   h1
     color: base.$chocolate-web
@@ -66,7 +69,7 @@
       font-size: 1.5rem
       text-align: start
       width: 100%
-      letter-spacing: 0.1rem
+      letter-spacing: 0.07rem
       margin-left: 0.4rem
     
     +base.respond-to($min-width: large)
@@ -80,7 +83,6 @@
       color: base.$cerulean-blue
 
   %card
-    width: 100%
     min-height: 15rem
     margin: 0.7rem 0
     color: base.$platinum
@@ -90,40 +92,54 @@
     flex-direction: column
     align-items: center
     font-weight: bold
+    position: relative
 
     img
       margin: 0rem 0
+      opacity: 0.37
+      z-index: -1
 
     p
+      width: 140px
+      height: 100px
+      position: absolute
+      top: 50%
+      margin-top: -50px
+      left: 50%
+      margin-left: -70px
+      margin-bottom: 0
+      text-align: center
+
       +base.respond-to($min-width: small)
         font-size: 2.2rem
+
       +base.respond-to($min-width: large)
         font-size: 3.5rem
 
-  .blog_card
-    @extend %card
-    background-color: base.$cerulean-blue
+  .card_row_one
+    width: 100%
 
     +base.respond-to($min-width: small)
-      height: 45vw
-      width: 65%
+      display: flex
+      justify-content: center
+
+  .blog_card
+    @extend %card
+
+    +base.respond-to($min-width: large)
+      margin-right: 2rem
 
     img
       width: 95%
       +base.respond-to($min-width: small)
-        height: 75%
+        height: 32vw
+        width: auto
 
   .bio_card
     @extend %card
-    background-color: base.$chocolate-web
-
-    +base.respond-to($min-width: small)
-      height: 45vw
-      width: 32%
-      margin-left: auto
 
     img
-      width: 70%
+      width: 95%
       +base.respond-to($min-width: small)
-        height: 75%
+        height: 32vw
         width: auto

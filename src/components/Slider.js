@@ -4,7 +4,7 @@ import s from "../style/dist/Slider.module.css";
 
 /**
  *
- * @param {*} props Includes: blogTitles, urls
+ * @param {*} props Includes: blogTitles, paths
  */
 export default class Slider extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class Slider extends React.Component {
 
   handleSlideChange(delta) {
     const next = this.state.index + delta;
-    if (!(next < 0) && !(next > this.props.urls.length - 1)) {
+    if (!(next < 0) && !(next > this.props.paths.length - 1)) {
       this.setState({ index: this.state.index + delta });
     }
   }
@@ -39,8 +39,8 @@ export default class Slider extends React.Component {
   }
 
   render() {
-    const { urls } = this.props;
-    const nav_dots = urls.map((url, index) =>
+    const { paths } = this.props;
+    const nav_dots = paths.map((url, index) =>
       index === this.state.index ? (
         <li key={index.toString()} className={s.nav_dots_selected}></li>
       ) : (

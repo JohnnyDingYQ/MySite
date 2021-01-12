@@ -56,11 +56,16 @@ a:hover {
 }
 @media (min-width: 658px) {
   .container .header_text {
-    flex-basis: 55%;
+    flex-basis: 53%;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .container .header_text {
+    flex-basis: 50%;
   }
 }
 .container h1 {
@@ -92,7 +97,7 @@ a:hover {
     font-size: 1.5rem;
     text-align: start;
     width: 100%;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.07rem;
     margin-left: 0.4rem;
   }
 }
@@ -109,7 +114,6 @@ a:hover {
   color: #5998C5;
 }
 .container .bio_card, .container .blog_card {
-  width: 100%;
   min-height: 15rem;
   margin: 0.7rem 0;
   color: #E2E2E2;
@@ -119,9 +123,23 @@ a:hover {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+  position: relative;
 }
 .container .bio_card img, .container .blog_card img {
   margin: 0rem 0;
+  opacity: 0.37;
+  z-index: -1;
+}
+.container .bio_card p, .container .blog_card p {
+  width: 140px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -70px;
+  margin-bottom: 0;
+  text-align: center;
 }
 @media (min-width: 658px) {
   .container .bio_card p, .container .blog_card p {
@@ -133,13 +151,18 @@ a:hover {
     font-size: 3.5rem;
   }
 }
-.container .blog_card {
-  background-color: #5998C5;
+.container .card_row_one {
+  width: 100%;
 }
 @media (min-width: 658px) {
+  .container .card_row_one {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
   .container .blog_card {
-    height: 45vw;
-    width: 65%;
+    margin-right: 2rem;
   }
 }
 .container .blog_card img {
@@ -147,25 +170,16 @@ a:hover {
 }
 @media (min-width: 658px) {
   .container .blog_card img {
-    height: 75%;
-  }
-}
-.container .bio_card {
-  background-color: #DA7422;
-}
-@media (min-width: 658px) {
-  .container .bio_card {
-    height: 45vw;
-    width: 32%;
-    margin-left: auto;
+    height: 32vw;
+    width: auto;
   }
 }
 .container .bio_card img {
-  width: 70%;
+  width: 95%;
 }
 @media (min-width: 658px) {
   .container .bio_card img {
-    height: 75%;
+    height: 32vw;
     width: auto;
   }
 }

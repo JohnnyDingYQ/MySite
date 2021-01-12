@@ -21,6 +21,8 @@ export default function Blog() {
       path={blog.path}
     ></CardPost>
   ));
+  const sliderTitles = blog_data.map((blog) => blog.title);
+  const sliderPaths = blog_data.map((blog) => blog.path);
 
   return (
     <div className="app">
@@ -32,8 +34,8 @@ export default function Blog() {
         <h1>Blogs</h1>
         <Slider
           className={s.mobile_slider}
-          blogTitles={["Test1", "Test2"]}
-          urls={["url1", "url2"]}
+          blogTitles={sliderTitles}
+          paths={sliderPaths}
         />
         {posts}
       </Container>

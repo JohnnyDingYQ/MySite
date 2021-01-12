@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import s from "../style/dist/NavBar.module.css";
 
-import site_logo from "../res/img/site_icon.svg";
+import site_logo from "../res/img/site_icon.png";
 
 import link_data from "../res/data/nav_links.json";
 
