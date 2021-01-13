@@ -18,7 +18,7 @@ a:hover {
   color: #DA7422;
 }
 .container h2 {
-  color: #889699;
+  color: #5998C5;
   font-weight: normal;
 }
 .container .blog_content {
@@ -28,5 +28,5 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .container .blog_content h2 {
-  color: #5998C5;
+  color: #DA7422;
 }

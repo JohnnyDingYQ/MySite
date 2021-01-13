@@ -28,6 +28,7 @@ a:hover {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #E2E2E2;
 }
 .container .nav_dots {
   position: absolute;

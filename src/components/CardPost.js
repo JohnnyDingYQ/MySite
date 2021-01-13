@@ -17,6 +17,7 @@ export default function CardPost(props) {
     <Link className={`${s.container} ${props.className}`} to={props.path}>
       <p className={s.blog_title}>{props.title}</p>
       <p className={s.blog_desc}>{props.desc}</p>
+      <i className={s.blog_date}>- {props.date} -</i>
       <div className={s.tags}>{tags}</div>
     </Link>
   );

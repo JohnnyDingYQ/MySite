@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
 import s from "../style/dist/TagPost.module.css";
 
 /**
- * Tag to label and catogarize blogs
+ * Tag to label and catagorize blogs
  *
  * @param {*} props Includes: tag
  */
 export default function TagPost(props) {
-  return <Link className={s.container}>{props.tagName}</Link>;
+  return <div className={s.container}>{props.tagName}</div>;
 }

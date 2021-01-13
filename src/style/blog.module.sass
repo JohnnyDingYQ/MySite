@@ -6,14 +6,125 @@
   justify-content: center
   align-items: center
 
+  +base.respond-to($min-width: small)
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-evenly
+
   h1
     color: base.$chocolate-web
+
+    +base.respond-to($min-width: small)
+      flex-basis: 100%
+      text-align: center
+      font-size: 3rem
 
   .mobile_slider
     width: calc(100% + 3rem)
     height: 12rem
     margin: 0 -1.5rem 2rem -1.5rem
 
+    +base.respond-to($min-width: small)
+      display: none
+
+  .gallery
+    width: 100%
+    max-width: 80rem
+    height: 26rem
+    display: none
+
+    +base.respond-to($min-width: small)
+        display: flex
+        margin: 1rem 0
+
+    +base.respond-to($min-width: large)
+        height: 30rem
+    
+    %gallery-section
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      font-weight: bold
+      padding: 0 1rem
+      cursor: pointer
+      @include base.transition($transition: 0.2s)
+
+      &:hover
+        transform: scale(1.07)
+        border-radius: 5px
+    
+    $gallery-margin-h: 0.7rem
+    $gallery-margin-v: 0.7rem
+
+    .gray
+      @extend %gallery-section
+      color: base.$platinum
+      font-size: 2.1rem
+      background-color: base.$gray
+      flex-basis: 35%
+      flex-grow: 1
+      margin-right: $gallery-margin-h
+
+      +base.respond-to($min-width: large)
+        font-size: 3rem
+    
+    .blue_white
+      display: flex
+      flex-direction: column
+      flex-basis: 30%
+      max-width: 15rem
+      height: 100%
+      margin-right: $gallery-margin-h
+
+      .blue
+        @extend %gallery-section
+        font-size: 1.9rem
+        height: 75%
+        background-color: base.$cerulean-blue
+        margin-bottom: $gallery-margin-v
+        color: base.$platinum
+      
+      .white
+        @extend %gallery-section
+        font-size: 1.9rem
+        height: calc(25% - #{$gallery-margin-v})
+        color: base.$black-olive
+        background-color: base.$platinum
+    
+    .orange
+      @extend %gallery-section
+      height: 100%
+      flex-basis: 22%
+      background-color: base.$chocolate-web
+      font-size: 2rem
+      color: base.$platinum
+
   .card_post
-    margin: 1rem 0
-  
+    margin: 1rem
+    height: 13rem
+    min-width: 25rem
+
+    +base.respond-to($min-width: small)
+      flex-basis: 38%
+      height: 15rem
+      max-width: 27rem
+
+    +base.respond-to($min-width: large)
+      flex-basis: 47%
+      height: 17rem
+      max-width: 32rem
+
+      p:first-of-type
+        font-size: 2rem
+      
+      p:nth-of-type(2)
+        font-size: 1.3rem
+
+  .dummy_post
+    display: none
+    height: 20px !important
+
+    +base.respond-to($min-width: small)
+      display: block
+      opacity: 0
