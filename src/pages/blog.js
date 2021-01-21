@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "gatsby";
+import { StaticQuery, Link } from "gatsby";
 
 import s from "../style/dist/blog.module.css";
 
@@ -9,23 +9,7 @@ import NavBar from "../components/NavBar";
 import Slider from "../components/Slider";
 import CardPost from "../components/CardPost";
 
-import blog_data from "../res/data/blogs.json";
-
 export default function Blog() {
-  const posts = blog_data.map((blog) => (
-    <CardPost
-      className={s.card_post}
-      key={blog.title}
-      title={blog.title}
-      desc={blog.desc}
-      tags={blog.tags}
-      path={blog.path}
-      date={blog.date}
-    ></CardPost>
-  ));
-  const sliderTitles = blog_data.map((blog) => blog.title);
-  const sliderPaths = blog_data.map((blog) => blog.path);
-
   return (
     <div className="app">
       <Helmet>
@@ -36,8 +20,8 @@ export default function Blog() {
         <h1>Blog</h1>
         <Slider
           className={s.mobile_slider}
-          blogTitles={sliderTitles}
-          paths={sliderPaths}
+          blogTitles={["Hello World"]}
+          paths={["/blog/hello_world"]}
         />
         <section className={s.gallery}>
           <Link className={s.gray}>Hello World</Link>
@@ -47,7 +31,43 @@ export default function Blog() {
           </div>
           <Link className={s.orange}>A Topic</Link>
         </section>
-        {posts}
+        <StaticQuery
+          query={graphql`
+            query Query {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] }
+                limit: 1000
+              ) {
+                edges {
+                  node {
+                    frontmatter {
+                      slug
+                      date(formatString: "MMMM DD, YYYY")
+                      title
+                      desc
+                      tags
+                    }
+                  }
+                }
+              }
+            }
+          `}
+          render={(data) => {
+            const posts = data.allMarkdownRemark.edges.map(({ node }) => (
+              <CardPost
+                className={s.card_post}
+                key={node.frontmatter.title}
+                title={node.frontmatter.title}
+                desc={node.frontmatter.desc}
+                tags={node.frontmatter.tags}
+                path={node.frontmatter.slug}
+                date={node.frontmatter.date}
+              ></CardPost>
+            ));
+            return posts;
+          }}
+        />
+        {/* {posts} */}
         {/* This is a hidden post to fix last row alignment of flex box */}
         <CardPost
           className={`${s.dummy_post} ${s.card_post}`}

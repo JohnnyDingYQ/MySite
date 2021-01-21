@@ -2,6 +2,8 @@
 slug: "/blog/technology_of_this_site"
 date: "2020-12-23"
 title: "Technology of This Site"
+desc: "Introduction and explanations"
+tags: ["Technology"]
 ---
 
 In this post, I will give an brief overview of the techniques used in this site and demonstrate my understanding of them.

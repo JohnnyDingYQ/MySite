@@ -30,3 +30,13 @@ a:hover {
 .container .blog_content h2 {
   color: #DA7422;
 }
+.container .blog_content blockquote {
+  background-color: #aaa;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #3a3636;
+  font-style: italic;
+}
+.container .blog_content blockquote p {
+  margin: 0;
+}

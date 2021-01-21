@@ -1,13 +1,19 @@
 ---
 slug: "/blog/what_is_democracy"
-date: "2020-01-10"
+date: "2021-01-10"
 title: "What is Democracy?"
+desc: "Going beyond enfranchisement"
+tags: ["Thoughts"]
 ---
 
-When we talk about _Democracy_, we are usually talking about western democracy, in which all adults are enfranchised to vote.
+What exactly is democracy? In the 20th century. George Orwell, in his essay _Politics and the English Language_, shares his take on democracy when discussing tbe use of meaningless words.
 
-However, the original definition of democracy is different. According to Wikipedia, democracy "is a form of government in which the people have the authority to choose their governing legislators". _A country is democratic whenever the will of its people is represented in the governance body._
+> In the case of a word like democracy, not only is there no agreed definition, but the attempt to make one is resisted from all sides. It is almost universally felt that when we call a country democratic we are praising it: consequently the defenders of every kind of régime claim that it is a democracy, and fear that they might have to stop using that word if it were tied down to any one meaning. Words of this kind are often used in a consciously dishonest way. That is, the person who uses them has his own private definition, but allows his hearer to think he means something quite different.
 
-Despite its recent challenges, western democracy (or enfranchisement of all adults) has been proven as one of the most efficient way to represent the will of the people and achieve democracy. Nevertheless, **un-enfranchisement** does not imply **the lack of democracy**. Enfranchisement (or voting) is not the only way represent the will of the people.
+When I came across this section of the essay, I found it to be very interesting. Unlike Orwell's claim, today's democracy seems to have a mainstream or widely accepted definition - democracy means the **enfranchisement** of eligible adults.
 
-When terms are used, they usually lose its original meaning, carry new meanings, and can even become misleading or deceptive. It is important to not **passively accept and use concepts** but to **actively understand their implications and nuances**.
+Does that mean **enfranchisement** and **democracy** are inevitably related? Can enfranchisement be used as a benchmark for the degree of democracy?
+
+Enfranchisement is a method to achieve democracy. Enfranchisement is the "mean", andd democracy is the "end". For sure there are more than one "mean" to achieve a "end". In other words, enfranchisement is not the only way to represent the will of the people and to be democratic.
+
+In my opinion, it is a common pitfall to see enfranchisement and democracy as equivalent concepts. We must examine beyond enfranchisement when discussing democracy.

@@ -2,6 +2,8 @@
 slug: "/blog/hello_world"
 date: "2020-12-18"
 title: "Hello World"
+desc: "Introduction to this site"
+tags: ["Thoughts"]
 ---
 
 **Welcome to my site!**
