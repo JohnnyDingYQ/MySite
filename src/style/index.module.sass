@@ -105,16 +105,17 @@
       position: absolute
       top: 50%
       margin-top: -50px
-      left: 50%
       margin-left: -70px
+      left: 50%
       margin-bottom: 0
       text-align: center
+      font-size: 2rem
 
       +base.respond-to($min-width: small)
         font-size: 2.2rem
 
       +base.respond-to($min-width: large)
-        font-size: 3.5rem
+        font-size: 3.2rem
 
   .card_row_one
     width: 100%
@@ -143,3 +144,8 @@
       +base.respond-to($min-width: small)
         height: 32vw
         width: auto
+
+    p
+      margin-left: -70px
+      +base.respond-to($min-width: large)
+        font-size: 2.7rem

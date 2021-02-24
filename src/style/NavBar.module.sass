@@ -24,6 +24,12 @@
     img
       margin-right: 0.5rem
       margin-top: -0.5rem
+
+    span
+      display: none
+      +base.respond-to($min-width: small)
+        display: inline-block
+      
   
   .nav_link
     color: base.$black-olive

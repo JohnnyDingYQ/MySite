@@ -136,10 +136,11 @@ a:hover {
   position: absolute;
   top: 50%;
   margin-top: -50px;
-  left: 50%;
   margin-left: -70px;
+  left: 50%;
   margin-bottom: 0;
   text-align: center;
+  font-size: 2rem;
 }
 @media (min-width: 658px) {
   .container .bio_card p, .container .blog_card p {
@@ -148,7 +149,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .container .bio_card p, .container .blog_card p {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 .container .card_row_one {
@@ -181,5 +182,13 @@ a:hover {
   .container .bio_card img {
     height: 32vw;
     width: auto;
+  }
+}
+.container .bio_card p {
+  margin-left: -70px;
+}
+@media (min-width: 1200px) {
+  .container .bio_card p {
+    font-size: 2.7rem;
   }
 }

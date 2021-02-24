@@ -47,8 +47,8 @@ export default function Index() {
             <p>Blog</p>
             <img src={blog_art} alt="blog_art"></img>
           </Link>
-          <Link className={s.bio_card} d to="/bio">
-            <p>Bio</p>
+          <Link className={s.bio_card} d to="/gallery">
+            <p>Gallery</p>
             <img src={bio_art} alt="bio_art"></img>
           </Link>
         </div>

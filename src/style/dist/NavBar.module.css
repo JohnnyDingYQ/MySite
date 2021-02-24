@@ -37,6 +37,14 @@ a:hover {
   margin-right: 0.5rem;
   margin-top: -0.5rem;
 }
+.container .github_link span {
+  display: none;
+}
+@media (min-width: 658px) {
+  .container .github_link span {
+    display: inline-block;
+  }
+}
 .container .nav_link {
   color: #343633;
   padding: 0 1.5rem;

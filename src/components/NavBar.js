@@ -30,7 +30,7 @@ export default function NavBar(props) {
         to="https://github.com/JohnnyDingYQ/MySite"
       >
         <img alt="github" src={github_logo} />
-        Github Repo
+        <span>Github Repo</span>
       </Link>
       {nav_links}
     </nav>
