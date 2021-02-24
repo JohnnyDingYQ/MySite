@@ -1,0 +1,47 @@
+@use "base"
+
+.container
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  section
+    color: base.$chocolate-web
+    width: 100%
+    text-align: center
+    font-weight: bold
+    font-size: 2rem
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    img
+      max-width: 700px
+      height: auto
+      margin: 1rem 0rem
+    
+
+  .scroll_spy
+    position: fixed
+    right: 0
+    top: 40%
+    margin-right: 5rem
+    background-color: base.$gray
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1rem
+    border-radius: 0.5rem
+
+    p
+      color: base.$cerulean-blue
+      font-size: 2rem
+      font-weight: bold
+
+    li
+      list-style-type: none
+
+    li a
+      font-size: 1.5rem
+      color: base.$platinum

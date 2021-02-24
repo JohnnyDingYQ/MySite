@@ -1,0 +1,57 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #343633;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container section {
+  color: #DA7422;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container section img {
+  max-width: 700px;
+  height: auto;
+  margin: 1rem 0rem;
+}
+.container .scroll_spy {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  margin-right: 5rem;
+  background-color: #565B52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.container .scroll_spy p {
+  color: #5998C5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container .scroll_spy li {
+  list-style-type: none;
+}
+.container .scroll_spy li a {
+  font-size: 1.5rem;
+  color: #E2E2E2;
+}

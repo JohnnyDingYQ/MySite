@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { StaticQuery, Link } from "gatsby";
+import { StaticQuery, Link, graphql } from "gatsby";
 
 import s from "../style/dist/blog.module.css";
 
